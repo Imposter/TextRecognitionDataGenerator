@@ -131,6 +131,6 @@ class FakeTextDataGenerator(object):
 
         # Save the image
         if out_dir is not None:
-		    final_image.convert('RGB').save(os.path.join(out_dir, image_name))
+            final_image.convert('RGB').save(os.path.join(out_dir, image_name))
         
         return final_image.convert('RGB')
