@@ -30,6 +30,14 @@ class BackgroundGenerator(object):
         return Image.new("L", (width, height), 255).convert('RGBA')
 
     @classmethod
+    def plain_black(cls, height, width):
+        """
+            Creates a plain white background
+        """
+
+        return Image.new("L", (width, height), 0).convert('RGBA')
+
+    @classmethod
     def quasicrystal(cls, height, width):
         """
             Create a background with quasicrystal (https://en.wikipedia.org/wiki/Quasicrystal)

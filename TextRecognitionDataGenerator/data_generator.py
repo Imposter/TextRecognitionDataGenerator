@@ -89,6 +89,8 @@ class FakeTextDataGenerator(object):
         elif background_type == 1:
             background = BackgroundGenerator.plain_white(background_height, background_width)
         elif background_type == 2:
+            background = BackgroundGenerator.plain_black(background_height, background_height)
+        elif background_type == 3:
             background = BackgroundGenerator.quasicrystal(background_height, background_width)
         else:
             background = BackgroundGenerator.picture(background_height, background_width)
